@@ -1,0 +1,19 @@
+
+/* HEADER SECTION */
+
+#header {
+    background-color: #212529;
+}
+
+@media (min-width: 992px) {
+    #header div {
+        border-color: #ffff;
+    }
+    #header{
+        background-color: #FFF; 
+    }
+    .logo path {
+        fill: #212529;
+    }
+}
+
