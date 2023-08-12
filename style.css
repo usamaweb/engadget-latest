@@ -34,3 +34,10 @@ h1,h2,h3,h4,h5,h6 {
 #socials-nav svg path:hover{
     fill:lightgray;
 }
+
+/* CAROUSEL SECTION */
+@media (max-width: 576px) {
+    #carousel {
+      padding: 0;
+    }
+  }
