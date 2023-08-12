@@ -34,7 +34,7 @@
         <div class="container d-flex justify-content-between align-items-center">
             
             <div class="d-flex">
-                <button class="navbar-toggler btn me-2 d-flex d-lg-none align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler btn d-flex d-lg-none align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
                     <!-- Hamburger Icon -->
                     <svg width="55" height="33" viewBox="0 0 12 12" id="Слой_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -52,7 +52,7 @@
                     </svg>
                 </button>
 
-                <a href="#">
+                <a class="ps-3" href="#">
                     <!-- LOGO -->
                     <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="logo ms-1"  width="160" style="stroke-width:0;vertical-align:bottom" height="77" viewBox="0 0 152 33" data-icon="logo-engadget"><path d="M0 24.1C0 25.7 1.3 27 3 27h12v-3H3v-3h11.8c1.6 0 3.2-1.3 3.2-2.9v.1-5.9c0-1.6-1.5-3.2-3.2-3.2H3c-1.6 0-3 1.6-3 3.2v11.8zM15 18H3v-6h12v6zm40.1-9H43.2c-1.6 0-3.2 1.6-3.2 3.2v11.9-.1c0 1.6 1.6 3 3.2 3H55v3H43v3h12.1c1.6 0 2.9-1.4 2.9-3V12.2c0-1.6-1.3-3.2-2.9-3.2zM55 24H43V12h12v12zM32 9h-8.9c-1.6 0-3.1 1.6-3.1 3.2V27h3V12h9c1.6 0 3 1.5 3 3.2V27h3V15.2c0-3.3-2.7-6.2-6-6.2zm43 15H63v-8.9c0-1.6 1.6-3.2 3.3-3.2H75v15h3V12.2c0-1.6-1.2-3.2-2.8-3.2h-8.9C63 9 60 11.9 60 15.2v8.9c0 1.6 1.7 2.9 3.3 2.9h5.2c2.7 0 5.5-1.1 6.5-3v3m68-27h-3v27h3V12h9V9h-9zm-42 24.1c0 1.6.9 2.9 2.5 2.9H115v3h-11v3h11.4c1.6 0 2.6-1.4 2.6-3.1v.1-17.8c0-1.6-1-3.2-2.6-3.2h-11.9c-1.6 0-2.5 1.6-2.5 3.2v11.9zm14-.1h-11V12h11v12zM95 9H83.4c-1.6 0-3.4 1.6-3.4 3.2v11.9-.1c0 1.6 1.8 3 3.4 3H98V0h-3v9zm0 15H83V12h12v12zm25 .1c0 1.6 1.7 2.9 3.3 2.9H135v-3h-12v-3h12.2c1.6 0 2.8-1.3 2.8-2.9v.1-5.9c0-1.6-1.2-3.2-2.8-3.2h-11.9c-1.6 0-3.3 1.6-3.3 3.2v11.8zm15-6.1h-12v-6h12v6z" stroke="#FFFFFF" fill="#FFFFFF" stroke-width="0px"></path></svg>
                 </a>
@@ -60,8 +60,10 @@
 
 
             <div class="p-4 border-start border-end border-light">
-                <!-- Search Icon -->
+                <!-- Log In text -->
                 <a class="d-none d-lg-block text-secondary text-decoration-none" href="#">Login</a>
+
+                <!-- Search Icon -->
 
                 <svg class="d-lg-none"  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="20" style="stroke-width:0;vertical-align:bottom" height="20" viewBox="0 0 24 24" data-icon="search"><path d="M9 3C5.686 3 3 5.686 3 9c0 3.313 2.686 6 6 6s6-2.687 6-6c0-3.314-2.686-6-6-6m13.713 19.713c-.387.388-1.016.388-1.404 0l-7.404-7.404C12.55 16.364 10.85 17 9 17c-4.418 0-8-3.582-8-8 0-4.42 3.582-8 8-8s8 3.58 8 8c0 1.85-.634 3.55-1.69 4.905l7.403 7.404c.39.386.39 1.015 0 1.403" stroke="#ABABAD" fill="#ABABAD" stroke-width="0px"></path></svg>
             </div>
@@ -70,12 +72,12 @@
     </header>
 
     <!-- NAVBAR SECTION -->
-    <nav class="navbar navbar-expand-md d-lg-flex d-none navbar-dark bg-dark border-bottom border-secondary">
+    <nav class="navbar navbar-expand-lg p-0 py-lg-3 d-lg-flex navbar-dark bg-dark border-bottom border-secondary">
 
         <div class="container">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Navbar list -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex ">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex px-2 ">
               <!-- Dropdown item 1 -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -192,19 +194,19 @@
            </ul>
             
           
-           <ul class="list-unstyled d-none  d-xl-flex align-items-center m-0">
+           <ul class="list-unstyled d-none  d-xl-flex align-items-center m-0" id="socials-nav">
                 <!-- Facebook Icon -->
                 <li><a class="text-decoration-none me-3" href="#">
-                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="Fill(engadgetFontGray) Stk(engadgetFontGray) socialLink:h_Fill(#fff) socialLink:h_Stk(#fff) Cur(p)" width="24" style="stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 32 32" data-icon="LogoFacebook"><path d="M12.752 30.4V16.888H9.365V12.02h3.387V7.865c0-3.264 2.002-6.264 6.613-6.264 1.866 0 3.248.19 3.248.19l-.11 4.54s-1.404-.013-2.943-.013c-1.66 0-1.93.81-1.93 2.152v3.553h5.008l-.22 4.867h-4.786V30.4h-4.88z" stroke="#959799" fill="#959799" stroke-width="0px"></path></svg>
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="30" style="stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 32 32" data-icon="LogoFacebook"><path d="M12.752 30.4V16.888H9.365V12.02h3.387V7.865c0-3.264 2.002-6.264 6.613-6.264 1.866 0 3.248.19 3.248.19l-.11 4.54s-1.404-.013-2.943-.013c-1.66 0-1.93.81-1.93 2.152v3.553h5.008l-.22 4.867h-4.786V30.4h-4.88z" stroke="#959799" fill="#959799" stroke-width="0px"></path></svg>
                 </a></li>
 
                 <!-- Twitter Icon -->
                 <li><a class="text-decoration-none me-3" href="#">
-                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="Fill(engadgetFontGray) Stk(engadgetFontGray) socialLink:h_Fill(#fff) socialLink:h_Stk(#fff) Cur(p)" width="24" style="stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 32 32" data-icon="LogoTwitter"><path d="M30.402 7.094c-1.058.47-2.198.782-3.392.928 1.218-.725 2.154-1.885 2.595-3.256-1.134.674-2.405 1.165-3.75 1.43-1.077-1.148-2.612-1.862-4.31-1.862-3.268 0-5.915 2.635-5.915 5.893 0 .464.056.91.155 1.34-4.915-.244-9.266-2.59-12.18-6.158-.51.87-.806 1.885-.806 2.96 0 2.044 1.045 3.847 2.633 4.905-.974-.032-1.883-.3-2.68-.736v.07c0 2.857 2.034 5.236 4.742 5.773-.498.138-1.022.21-1.56.21-.38 0-.75-.034-1.11-.103.75 2.344 2.93 4.042 5.518 4.09-2.024 1.58-4.57 2.523-7.333 2.523-.478 0-.952-.032-1.41-.085 2.613 1.674 5.72 2.65 9.054 2.65 10.872 0 16.814-8.976 16.814-16.765 0-.254-.008-.507-.018-.762 1.155-.83 2.155-1.868 2.95-3.047z" stroke="#959799" fill="#959799" stroke-width="0px"></path></svg></a></li>
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="30" style="stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 32 32" data-icon="LogoTwitter"><path d="M30.402 7.094c-1.058.47-2.198.782-3.392.928 1.218-.725 2.154-1.885 2.595-3.256-1.134.674-2.405 1.165-3.75 1.43-1.077-1.148-2.612-1.862-4.31-1.862-3.268 0-5.915 2.635-5.915 5.893 0 .464.056.91.155 1.34-4.915-.244-9.266-2.59-12.18-6.158-.51.87-.806 1.885-.806 2.96 0 2.044 1.045 3.847 2.633 4.905-.974-.032-1.883-.3-2.68-.736v.07c0 2.857 2.034 5.236 4.742 5.773-.498.138-1.022.21-1.56.21-.38 0-.75-.034-1.11-.103.75 2.344 2.93 4.042 5.518 4.09-2.024 1.58-4.57 2.523-7.333 2.523-.478 0-.952-.032-1.41-.085 2.613 1.674 5.72 2.65 9.054 2.65 10.872 0 16.814-8.976 16.814-16.765 0-.254-.008-.507-.018-.762 1.155-.83 2.155-1.868 2.95-3.047z" stroke="#959799" fill="#959799" stroke-width="0px"></path></svg></a></li>
 
                 <!-- Youtube Icon -->
                 <li><a class="text-decoration-none me-3" href="#">
-                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="Fill(engadgetFontGray) Stk(engadgetFontGray) socialLink:h_Fill(#fff) socialLink:h_Stk(#fff) Cur(p)" width="24" style="stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 24 24" data-icon="LogoYoutube"><path d="M9.73 15.117l-.002-6.18 5.944 3.1-5.943 3.08zm13.05-7.252s-.215-1.516-.875-2.184c-.836-.875-1.775-.88-2.203-.93-3.08-.223-7.697-.223-7.697-.223h-.01s-4.618 0-7.696.222c-.43.05-1.37.055-2.206.93-.66.67-.874 2.185-.874 2.185S1 9.645 1 11.425v1.67c0 1.78.22 3.56.22 3.56s.215 1.516.874 2.184c.837.875 1.937.847 2.426.94C6.28 19.947 12 20 12 20s4.623-.007 7.702-.23c.43-.05 1.367-.055 2.204-.93.66-.67.875-2.185.875-2.185s.22-1.78.22-3.56v-1.67c0-1.78-.22-3.56-.22-3.56z" stroke="#959799" fill="#959799" stroke-width="0px"></path></svg></a></li>
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="30" style="stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 24 24" data-icon="LogoYoutube"><path d="M9.73 15.117l-.002-6.18 5.944 3.1-5.943 3.08zm13.05-7.252s-.215-1.516-.875-2.184c-.836-.875-1.775-.88-2.203-.93-3.08-.223-7.697-.223-7.697-.223h-.01s-4.618 0-7.696.222c-.43.05-1.37.055-2.206.93-.66.67-.874 2.185-.874 2.185S1 9.645 1 11.425v1.67c0 1.78.22 3.56.22 3.56s.215 1.516.874 2.184c.837.875 1.937.847 2.426.94C6.28 19.947 12 20 12 20s4.623-.007 7.702-.23c.43-.05 1.367-.055 2.204-.93.66-.67.875-2.185.875-2.185s.22-1.78.22-3.56v-1.67c0-1.78-.22-3.56-.22-3.56z" stroke="#959799" fill="#959799" stroke-width="0px"></path></svg></a></li>
 
               </ul>                
 
@@ -217,7 +219,7 @@
       </nav>
 
 
-      <!--  -->
+      <!-- EXTRA SPACE AFTER NAV  -->
       <div class="bg-dark p-4"></div>
 
     <!-- Bootstrap JS -->
