@@ -16,6 +16,14 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #212529;
 }
 
+@media (max-width: 576px) {
+    #header .container {
+      padding-right: 0;
+      margin-right: 0;
+    }
+  }
+
+
 /* Changed size of logo and hamburger icon on small devices */
 @media (max-width: 992px) {
     .navbar-toggler {
