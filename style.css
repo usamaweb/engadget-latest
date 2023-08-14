@@ -16,6 +16,18 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #212529;
 }
 
+/* Changed size of logo and hamburger icon on small devices */
+@media (max-width: 992px) {
+    .navbar-toggler {
+        width: 25px;
+    }
+    .logo {
+      width: 120px;
+    }
+}
+
+
+
 @media (min-width: 992px) {
     #header div {
         border-color: #ffff;
@@ -33,6 +45,10 @@ h1,h2,h3,h4,h5,h6 {
 
 #socials-nav svg path:hover{
     fill:lightgray;
+}
+
+#navbar {
+    border-color: lightgray;
 }
 
 /* CAROUSEL SECTION */
