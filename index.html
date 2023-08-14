@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engadget | The Latest </title>
@@ -8,18 +8,24 @@
     <!-- Google Fonts (closest possible) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto+Condensed:wght@300;700&display=swap"
+      rel="stylesheet">
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous">
 
     <!-- Breakpoints CSS -->
     <link rel="stylesheet" href="breakpoints.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
 
     <!-- HEADER SECTION -->
 
@@ -29,198 +35,241 @@
         2- Same issue with border property, i am not able to modify it by using custom CSS. (Styles given by bootstrap are more specific and i am not able change them by custom css)
     -->
 
-
     <header id="header">
-        <div class="container d-flex justify-content-between align-items-center">
-            
-            <div class="d-flex">
-                <button class="navbar-toggler btn d-flex d-lg-none align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container d-flex justify-content-between align-items-center">
 
-                    <!-- Hamburger Icon -->
-                    <svg width="55" height="33" viewBox="0 0 12 12" id="Слой_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    
-                    <g>
-                    
-                    <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="5.5"/>
-                    
-                    <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="2.5"/>
-                    
-                    <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="8.5"/>
-                    
-                    </g>
-                    
-                    </svg>
-                </button>
+        <div class="d-flex">
+          <button class="navbar-toggler btn d-flex d-lg-none align-items-center"
+            type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
 
-                <a class="ps-3" href="#">
-                    <!-- LOGO -->
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="logo ms-1"  width="160" style="stroke-width:0;vertical-align:bottom" height="77" viewBox="0 0 152 33" data-icon="logo-engadget"><path d="M0 24.1C0 25.7 1.3 27 3 27h12v-3H3v-3h11.8c1.6 0 3.2-1.3 3.2-2.9v.1-5.9c0-1.6-1.5-3.2-3.2-3.2H3c-1.6 0-3 1.6-3 3.2v11.8zM15 18H3v-6h12v6zm40.1-9H43.2c-1.6 0-3.2 1.6-3.2 3.2v11.9-.1c0 1.6 1.6 3 3.2 3H55v3H43v3h12.1c1.6 0 2.9-1.4 2.9-3V12.2c0-1.6-1.3-3.2-2.9-3.2zM55 24H43V12h12v12zM32 9h-8.9c-1.6 0-3.1 1.6-3.1 3.2V27h3V12h9c1.6 0 3 1.5 3 3.2V27h3V15.2c0-3.3-2.7-6.2-6-6.2zm43 15H63v-8.9c0-1.6 1.6-3.2 3.3-3.2H75v15h3V12.2c0-1.6-1.2-3.2-2.8-3.2h-8.9C63 9 60 11.9 60 15.2v8.9c0 1.6 1.7 2.9 3.3 2.9h5.2c2.7 0 5.5-1.1 6.5-3v3m68-27h-3v27h3V12h9V9h-9zm-42 24.1c0 1.6.9 2.9 2.5 2.9H115v3h-11v3h11.4c1.6 0 2.6-1.4 2.6-3.1v.1-17.8c0-1.6-1-3.2-2.6-3.2h-11.9c-1.6 0-2.5 1.6-2.5 3.2v11.9zm14-.1h-11V12h11v12zM95 9H83.4c-1.6 0-3.4 1.6-3.4 3.2v11.9-.1c0 1.6 1.8 3 3.4 3H98V0h-3v9zm0 15H83V12h12v12zm25 .1c0 1.6 1.7 2.9 3.3 2.9H135v-3h-12v-3h12.2c1.6 0 2.8-1.3 2.8-2.9v.1-5.9c0-1.6-1.2-3.2-2.8-3.2h-11.9c-1.6 0-3.3 1.6-3.3 3.2v11.8zm15-6.1h-12v-6h12v6z" stroke="#FFFFFF" fill="#FFFFFF" stroke-width="0px"></path></svg>
-                </a>
-            </div>
+            <!-- Hamburger Icon -->
+            <svg width="55" height="33" viewBox="0 0 12 12" id="Слой_1"
+              version="1.1" xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
 
+              <g>
 
-            <div class="p-4 border-start ">
-                <!-- Log In text -->
-                <a class="d-none d-lg-block text-secondary text-decoration-none" href="#">Login</a>
+                <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="5.5" />
 
-                <!-- Search Icon -->
+                <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="2.5" />
 
-                <svg class="d-lg-none"  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="20" style="stroke-width:0;vertical-align:bottom" height="20" viewBox="0 0 24 24" data-icon="search"><path d="M9 3C5.686 3 3 5.686 3 9c0 3.313 2.686 6 6 6s6-2.687 6-6c0-3.314-2.686-6-6-6m13.713 19.713c-.387.388-1.016.388-1.404 0l-7.404-7.404C12.55 16.364 10.85 17 9 17c-4.418 0-8-3.582-8-8 0-4.42 3.582-8 8-8s8 3.58 8 8c0 1.85-.634 3.55-1.69 4.905l7.403 7.404c.39.386.39 1.015 0 1.403" stroke="#ABABAD" fill="#ABABAD" stroke-width="0px"></path></svg>
-            </div>
+                <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="8.5" />
 
+              </g>
+
+            </svg>
+          </button>
+
+          <a class="ps-3" href="#">
+            <!-- LOGO -->
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg" class="logo ms-1" width="160"
+              style="stroke-width:0;vertical-align:bottom" height="77"
+              viewBox="0 0 152 33" data-icon="logo-engadget"><path
+                d="M0 24.1C0 25.7 1.3 27 3 27h12v-3H3v-3h11.8c1.6 0 3.2-1.3 3.2-2.9v.1-5.9c0-1.6-1.5-3.2-3.2-3.2H3c-1.6 0-3 1.6-3 3.2v11.8zM15 18H3v-6h12v6zm40.1-9H43.2c-1.6 0-3.2 1.6-3.2 3.2v11.9-.1c0 1.6 1.6 3 3.2 3H55v3H43v3h12.1c1.6 0 2.9-1.4 2.9-3V12.2c0-1.6-1.3-3.2-2.9-3.2zM55 24H43V12h12v12zM32 9h-8.9c-1.6 0-3.1 1.6-3.1 3.2V27h3V12h9c1.6 0 3 1.5 3 3.2V27h3V15.2c0-3.3-2.7-6.2-6-6.2zm43 15H63v-8.9c0-1.6 1.6-3.2 3.3-3.2H75v15h3V12.2c0-1.6-1.2-3.2-2.8-3.2h-8.9C63 9 60 11.9 60 15.2v8.9c0 1.6 1.7 2.9 3.3 2.9h5.2c2.7 0 5.5-1.1 6.5-3v3m68-27h-3v27h3V12h9V9h-9zm-42 24.1c0 1.6.9 2.9 2.5 2.9H115v3h-11v3h11.4c1.6 0 2.6-1.4 2.6-3.1v.1-17.8c0-1.6-1-3.2-2.6-3.2h-11.9c-1.6 0-2.5 1.6-2.5 3.2v11.9zm14-.1h-11V12h11v12zM95 9H83.4c-1.6 0-3.4 1.6-3.4 3.2v11.9-.1c0 1.6 1.8 3 3.4 3H98V0h-3v9zm0 15H83V12h12v12zm25 .1c0 1.6 1.7 2.9 3.3 2.9H135v-3h-12v-3h12.2c1.6 0 2.8-1.3 2.8-2.9v.1-5.9c0-1.6-1.2-3.2-2.8-3.2h-11.9c-1.6 0-3.3 1.6-3.3 3.2v11.8zm15-6.1h-12v-6h12v6z"
+                stroke="#FFFFFF" fill="#FFFFFF" stroke-width="0px"></path></svg>
+          </a>
         </div>
+
+        <div class="p-4 border-start ">
+          <!-- Log In text -->
+          <a class="d-none d-lg-block text-secondary text-decoration-none"
+            href="#">Login</a>
+
+          <!-- Search Icon -->
+          <svg class="d-lg-none" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg" width="20"
+            style="stroke-width:0;vertical-align:bottom" height="20"
+            viewBox="0 0 24 24" data-icon="search"><path
+              d="M9 3C5.686 3 3 5.686 3 9c0 3.313 2.686 6 6 6s6-2.687 6-6c0-3.314-2.686-6-6-6m13.713 19.713c-.387.388-1.016.388-1.404 0l-7.404-7.404C12.55 16.364 10.85 17 9 17c-4.418 0-8-3.582-8-8 0-4.42 3.582-8 8-8s8 3.58 8 8c0 1.85-.634 3.55-1.69 4.905l7.403 7.404c.39.386.39 1.015 0 1.403"
+              stroke="#ABABAD" fill="#ABABAD" stroke-width="0px"></path></svg>
+        </div>
+
+      </div>
     </header>
 
     <!-- NAVBAR SECTION -->
-    <nav class="navbar navbar-expand-lg p-0 py-lg-3 d-lg-flex navbar-dark bg-dark border-bottom" id="navbar">
+    <nav
+      class="navbar navbar-expand-lg p-0 py-lg-3 d-lg-flex navbar-dark bg-dark border-bottom"
+      id="navbar">
 
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Navbar list -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex px-2 ">
-              <!-- Dropdown item 1 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Reviews
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Best in Tech</a></li>
-                  <li><a class="dropdown-item" href="#">Hands-on</a></li>
-                  <li class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">View all Reviews</a></li>
-                </ul>
-              </li>
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar list -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex px-2 ">
+            <!-- Dropdown item 1 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reviews
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Best in Tech</a></li>
+                <li><a class="dropdown-item" href="#">Hands-on</a></li>
+                <li class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">View all Reviews</a></li>
+              </ul>
+            </li>
 
-              <!-- Dropdown item 2 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Buying Guides
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Back to school Gift Ideas</a></li>
-                  <li><a class="dropdown-item" href="#">Best Wireless Earbuds</a></li>
-                  <li><a class="dropdown-item" href="#">Best Robot Vaccums</a></li>                  
-                  <li><a class="dropdown-item" href="#">Best Laptops</a></li>                  
-                  <li><a class="dropdown-item" href="#">Best Gaming Laptops</a></li>
-                  <li><a class="dropdown-item" href="#">View all Reviews</a></li>
-                  <li><a class="dropdown-item" href="#">Best VPN</a></li>
-                  <li><a class="dropdown-item" href="#">Best Bluetooth Trackers</a></li>
-                  <li class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">View all Buying Guides</a></li>
-                </ul>
-              </li>
+            <!-- Dropdown item 2 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Buying Guides
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Back to school Gift Ideas</a></li>
+                <li><a class="dropdown-item" href="#">Best Wireless Earbuds</a></li>
+                <li><a class="dropdown-item" href="#">Best Robot Vaccums</a></li>
+                <li><a class="dropdown-item" href="#">Best Laptops</a></li>
+                <li><a class="dropdown-item" href="#">Best Gaming Laptops</a></li>
+                <li><a class="dropdown-item" href="#">View all Reviews</a></li>
+                <li><a class="dropdown-item" href="#">Best VPN</a></li>
+                <li><a class="dropdown-item" href="#">Best Bluetooth Trackers</a></li>
+                <li class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">View all Buying Guides</a></li>
+              </ul>
+            </li>
 
-              
-              <!-- Dropdown item 3 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Gaming
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Best Games</a></li>
-                  <li><a class="dropdown-item" href="#">PlayStation</a></li>
-                  <li><a class="dropdown-item" href="#">Nintendo</a></li>                  
-                  <li><a class="dropdown-item" href="#">Xbox</a></li>                  
-                  <li class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">View all Gaming</a></li>
-                </ul>
-              </li>
+            <!-- Dropdown item 3 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gaming
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Best Games</a></li>
+                <li><a class="dropdown-item" href="#">PlayStation</a></li>
+                <li><a class="dropdown-item" href="#">Nintendo</a></li>
+                <li><a class="dropdown-item" href="#">Xbox</a></li>
+                <li class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">View all Gaming</a></li>
+              </ul>
+            </li>
 
-              <!-- Dropdown item 4 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Gear
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Azazon</a></li>
-                  <li><a class="dropdown-item" href="#">Apple</a></li>
-                  <li><a class="dropdown-item" href="#">Google</a></li>                  
-                  <li><a class="dropdown-item" href="#">Microsoft</a></li>
-                  <li><a class="dropdown-item" href="#">Samsung</a></li>                  
-                  <li class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">View all Gear</a></li>
-                </ul>
-              </li>
+            <!-- Dropdown item 4 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gear
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Azazon</a></li>
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Google</a></li>
+                <li><a class="dropdown-item" href="#">Microsoft</a></li>
+                <li><a class="dropdown-item" href="#">Samsung</a></li>
+                <li class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">View all Gear</a></li>
+              </ul>
+            </li>
 
-              <!-- Dropdown item 5 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Entertainment
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Movies</a></li>
-                  <li><a class="dropdown-item" href="#">Music</a></li>
-                  <li><a class="dropdown-item" href="#">TV</a></li>                  
-                  <li><a class="dropdown-item" href="#">Youtube</a></li>                  
-                  <li class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">View all Entertainment</a></li>
-                </ul>
-              </li>
+            <!-- Dropdown item 5 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Entertainment
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Movies</a></li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li><a class="dropdown-item" href="#">TV</a></li>
+                <li><a class="dropdown-item" href="#">Youtube</a></li>
+                <li class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">View all Entertainment</a></li>
+              </ul>
+            </li>
 
-              <!-- Dropdown item 6 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tomorrow
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Space</a></li>
-                  <li><a class="dropdown-item" href="#">AI</a></li>
-                  <li><a class="dropdown-item" href="#">Robotics</a></li>                  
-                  <li><a class="dropdown-item" href="#">Transportation</a></li>                  
-                  <li class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">View all Tomorrow</a></li>
-                </ul>
-              </li>
+            <!-- Dropdown item 6 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tomorrow
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Space</a></li>
+                <li><a class="dropdown-item" href="#">AI</a></li>
+                <li><a class="dropdown-item" href="#">Robotics</a></li>
+                <li><a class="dropdown-item" href="#">Transportation</a></li>
+                <li class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">View all Tomorrow</a></li>
+              </ul>
+            </li>
 
-              <!-- Nav Link 7 -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">Deals</a>
-              </li>
+            <!-- Nav Link 7 -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Deals</a>
+            </li>
 
-              <!-- Nav Link 8 -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
-              </li>
+            <!-- Nav Link 8 -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
 
-              <!-- Nav Link 9 -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">Video</a>
-              </li>
+            <!-- Nav Link 9 -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Video</a>
+            </li>
 
-              <!-- Nav Link 10 -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">Podcasts</a>
-              </li>
-           </ul>
-            
-          
-           <ul class="list-unstyled d-none d-xl-flex align-items-center m-0" id="socials-nav">
-                <!-- Facebook Icon -->
-                <li><a class="text-decoration-none me-3" href="#">
-                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="30" style="stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 32 32" data-icon="LogoFacebook"><path d="M12.752 30.4V16.888H9.365V12.02h3.387V7.865c0-3.264 2.002-6.264 6.613-6.264 1.866 0 3.248.19 3.248.19l-.11 4.54s-1.404-.013-2.943-.013c-1.66 0-1.93.81-1.93 2.152v3.553h5.008l-.22 4.867h-4.786V30.4h-4.88z" stroke="#959799" fill="#959799" stroke-width="0px"></path></svg>
-                </a></li>
+            <!-- Nav Link 10 -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Podcasts</a>
+            </li>
+          </ul>
 
-                <!-- Twitter Icon -->
-                <li><a class="text-decoration-none me-3" href="#">
-                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="30" style="stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 32 32" data-icon="LogoTwitter"><path d="M30.402 7.094c-1.058.47-2.198.782-3.392.928 1.218-.725 2.154-1.885 2.595-3.256-1.134.674-2.405 1.165-3.75 1.43-1.077-1.148-2.612-1.862-4.31-1.862-3.268 0-5.915 2.635-5.915 5.893 0 .464.056.91.155 1.34-4.915-.244-9.266-2.59-12.18-6.158-.51.87-.806 1.885-.806 2.96 0 2.044 1.045 3.847 2.633 4.905-.974-.032-1.883-.3-2.68-.736v.07c0 2.857 2.034 5.236 4.742 5.773-.498.138-1.022.21-1.56.21-.38 0-.75-.034-1.11-.103.75 2.344 2.93 4.042 5.518 4.09-2.024 1.58-4.57 2.523-7.333 2.523-.478 0-.952-.032-1.41-.085 2.613 1.674 5.72 2.65 9.054 2.65 10.872 0 16.814-8.976 16.814-16.765 0-.254-.008-.507-.018-.762 1.155-.83 2.155-1.868 2.95-3.047z" stroke="#959799" fill="#959799" stroke-width="0px"></path></svg></a></li>
+          <ul class="list-unstyled d-none d-xl-flex align-items-center m-0"
+            id="socials-nav">
+            <!-- Facebook Icon -->
+            <li><a class="text-decoration-none me-3" href="#">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg" width="30"
+                  style="stroke-width:0;vertical-align:bottom" height="24"
+                  viewBox="0 0 32 32" data-icon="LogoFacebook"><path
+                    d="M12.752 30.4V16.888H9.365V12.02h3.387V7.865c0-3.264 2.002-6.264 6.613-6.264 1.866 0 3.248.19 3.248.19l-.11 4.54s-1.404-.013-2.943-.013c-1.66 0-1.93.81-1.93 2.152v3.553h5.008l-.22 4.867h-4.786V30.4h-4.88z"
+                    stroke="#959799" fill="#959799" stroke-width="0px"></path></svg>
+              </a></li>
 
-                <!-- Youtube Icon -->
-                <li><a class="text-decoration-none me-3" href="#">
-                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="30" style="stroke-width:0;vertical-align:bottom" height="24" viewBox="0 0 24 24" data-icon="LogoYoutube"><path d="M9.73 15.117l-.002-6.18 5.944 3.1-5.943 3.08zm13.05-7.252s-.215-1.516-.875-2.184c-.836-.875-1.775-.88-2.203-.93-3.08-.223-7.697-.223-7.697-.223h-.01s-4.618 0-7.696.222c-.43.05-1.37.055-2.206.93-.66.67-.874 2.185-.874 2.185S1 9.645 1 11.425v1.67c0 1.78.22 3.56.22 3.56s.215 1.516.874 2.184c.837.875 1.937.847 2.426.94C6.28 19.947 12 20 12 20s4.623-.007 7.702-.23c.43-.05 1.367-.055 2.204-.93.66-.67.875-2.185.875-2.185s.22-1.78.22-3.56v-1.67c0-1.78-.22-3.56-.22-3.56z" stroke="#959799" fill="#959799" stroke-width="0px"></path></svg></a></li>
+            <!-- Twitter Icon -->
+            <li><a class="text-decoration-none me-3" href="#">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg" width="30"
+                  style="stroke-width:0;vertical-align:bottom" height="24"
+                  viewBox="0 0 32 32" data-icon="LogoTwitter"><path
+                    d="M30.402 7.094c-1.058.47-2.198.782-3.392.928 1.218-.725 2.154-1.885 2.595-3.256-1.134.674-2.405 1.165-3.75 1.43-1.077-1.148-2.612-1.862-4.31-1.862-3.268 0-5.915 2.635-5.915 5.893 0 .464.056.91.155 1.34-4.915-.244-9.266-2.59-12.18-6.158-.51.87-.806 1.885-.806 2.96 0 2.044 1.045 3.847 2.633 4.905-.974-.032-1.883-.3-2.68-.736v.07c0 2.857 2.034 5.236 4.742 5.773-.498.138-1.022.21-1.56.21-.38 0-.75-.034-1.11-.103.75 2.344 2.93 4.042 5.518 4.09-2.024 1.58-4.57 2.523-7.333 2.523-.478 0-.952-.032-1.41-.085 2.613 1.674 5.72 2.65 9.054 2.65 10.872 0 16.814-8.976 16.814-16.765 0-.254-.008-.507-.018-.762 1.155-.83 2.155-1.868 2.95-3.047z"
+                    stroke="#959799" fill="#959799" stroke-width="0px"></path></svg></a></li>
 
-              </ul>                
+            <!-- Youtube Icon -->
+            <li><a class="text-decoration-none me-3" href="#">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg" width="30"
+                  style="stroke-width:0;vertical-align:bottom" height="24"
+                  viewBox="0 0 24 24" data-icon="LogoYoutube"><path
+                    d="M9.73 15.117l-.002-6.18 5.944 3.1-5.943 3.08zm13.05-7.252s-.215-1.516-.875-2.184c-.836-.875-1.775-.88-2.203-.93-3.08-.223-7.697-.223-7.697-.223h-.01s-4.618 0-7.696.222c-.43.05-1.37.055-2.206.93-.66.67-.874 2.185-.874 2.185S1 9.645 1 11.425v1.67c0 1.78.22 3.56.22 3.56s.215 1.516.874 2.184c.837.875 1.937.847 2.426.94C6.28 19.947 12 20 12 20s4.623-.007 7.702-.23c.43-.05 1.367-.055 2.204-.93.66-.67.875-2.185.875-2.185s.22-1.78.22-3.56v-1.67c0-1.78-.22-3.56-.22-3.56z"
+                    stroke="#959799" fill="#959799" stroke-width="0px"></path></svg></a></li>
 
-              <!-- Search Icon -->
-                <a class="d-none d-lg-block" href="#"><svg  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="20" style="stroke-width:0;vertical-align:bottom" height="20" viewBox="0 0 24 24" data-icon="search"><path d="M9 3C5.686 3 3 5.686 3 9c0 3.313 2.686 6 6 6s6-2.687 6-6c0-3.314-2.686-6-6-6m13.713 19.713c-.387.388-1.016.388-1.404 0l-7.404-7.404C12.55 16.364 10.85 17 9 17c-4.418 0-8-3.582-8-8 0-4.42 3.582-8 8-8s8 3.58 8 8c0 1.85-.634 3.55-1.69 4.905l7.403 7.404c.39.386.39 1.015 0 1.403" stroke="#ABABAD" fill="#ABABAD" stroke-width="0px"></path></svg></a>
+          </ul>
 
+          <!-- Search Icon -->
+          <a class="d-none d-lg-block" href="#"><svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg" width="20"
+              style="stroke-width:0;vertical-align:bottom" height="20"
+              viewBox="0 0 24 24" data-icon="search"><path
+                d="M9 3C5.686 3 3 5.686 3 9c0 3.313 2.686 6 6 6s6-2.687 6-6c0-3.314-2.686-6-6-6m13.713 19.713c-.387.388-1.016.388-1.404 0l-7.404-7.404C12.55 16.364 10.85 17 9 17c-4.418 0-8-3.582-8-8 0-4.42 3.582-8 8-8s8 3.58 8 8c0 1.85-.634 3.55-1.69 4.905l7.403 7.404c.39.386.39 1.015 0 1.403"
+                stroke="#ABABAD" fill="#ABABAD" stroke-width="0px"></path></svg></a>
 
-          </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <!-- EXTRA SPACE AFTER NAV  -->
-      <div class="bg-dark p-4"></div>
+    <!-- EXTRA SPACE AFTER NAV  -->
+    <div class="bg-dark p-4"></div>
 
+    <main>
 
       <!-- CAROUSEL SECTION -->
       <section class="container" id="carousel">
@@ -228,52 +277,404 @@
         <div id="carouselExampleIndicators" class="carousel slide">
           <!-- Carousel Indicators -->
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4" aria-label="Slide 3"></button>
           </div>
           <!-- Carousel Items -->
           <div class="carousel-inner">
             <!-- Carousel Item-1 -->
             <div class="carousel-item active ratio ratio-16x9">
-              <img src="images/carousel/image-1.jpg" class="d-block w-100" alt="...">
+              <img src="images/carousel/image-1.jpg" class="d-block w-100"
+                alt="...">
             </div>
             <div class="carousel-item ratio ratio-16x9">
-              <img src="images/carousel/image-2.jpg" class="d-block w-100" alt="...">
+              <img src="images/carousel/image-2.jpg" class="d-block w-100"
+                alt="...">
             </div>
             <div class="carousel-item ratio ratio-16x9">
-              <img src="images/carousel/image-3.jpg" class="d-block w-100" alt="...">
+              <img src="images/carousel/image-3.jpg" class="d-block w-100"
+                alt="...">
             </div>
             <div class="carousel-item ratio ratio-16x9">
-              <img src="images/carousel/image-4.jpg" class="d-block w-100" alt="...">
+              <img src="images/carousel/image-4.jpg" class="d-block w-100"
+                alt="...">
             </div>
             <div class="carousel-item ratio ratio-16x9">
-              <img src="images/carousel/image-5.jpg" class="d-block w-100" alt="...">
+              <img src="images/carousel/image-5.jpg" class="d-block w-100"
+                alt="...">
             </div>
           </div>
 
           <!-- Previous Button -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <!-- Next Button -->
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </section>
 
-      
       <!-- LATEST SECTION -->
 
+      <section class="container my-5 " id="latest">
 
+        <!-- Section Heading -->
+        <h1
+          class="fs-3 fw-bold position-relative py-4 border-bottom mx-3 ms-sm-0">The
+          Latest</h1>
 
+        <!-- Content Container  -->
+        <div class="container row g-0">
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
-</html>
+          <!-- Cards Container -->
+          <div class="col-lg-9" id="cards">
+            <!-- Card 1 -->
+            <div class="card py-4 pe-0 m-0 border-0 border-bottom">
+              <div class="row g-0">
+                <!-- 
+                Applied ratio on it but image got too large
+              -->
+                <div class="col-md-5 col-lg-6">
+                  <img src="images/posts/image-1.jpg"
+                    class="img-fluid object-fit-cover h-100" alt="post-img">
+                </div>
+                <div class="col-md-7 col-lg-6 py-0 my-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Hitting the Books: The thirty-year
+                      quest to make WiFi a connectivity reality</h5>
+                    <p class="card-text lh-sm text-secondary d-none d-lg-block">Establishing
+                      the wireless protocol took a lot more effort than just
+                      unplugging it and waiting a few seconds.</p>
+                    <div class="d-flex align-items-center" id="author">
+                      <img src="images/carousel/image-1.jpg"
+                        class="rounded-circle me-2" width="25px" height="25px"
+                        alt="author">
+                      <p class="card-text"><small class="text-body-secondary">By
+                          A. Tarantola, 17 hours ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card py-4 pe-0 m-0 border-0 border-bottom">
+              <div class="row g-0">
+                <!-- 
+                  Applied ratio on it but image got too large
+                -->
+                <div class="col-md-5 col-lg-6">
+                  <img src="images/posts/image-2.jpg"
+                    class="img-fluid object-fit-cover h-100" alt="post-img">
+                </div>
+                <div class="col-md-7 col-lg-6 py-0 my-0">
+                  <div class="card-body">
+                    <h5 class="card-title">The Morning After: The music industry
+                      battles the Internet Archive</h5>
+                    <p class="card-text lh-sm text-secondary d-none d-lg-block">Plus,
+                      SBF is in jail, and the Messi effect is real.</p>
+                    <div class="d-flex align-items-center" id="author">
+                      <img src="images/carousel/image-1.jpg"
+                        class="rounded-circle me-2" width="25px" height="25px"
+                        alt="author">
+                      <p class="card-text"><small class="text-body-secondary">By
+                          A. Tarantola, 17 hours ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card py-4 pe-0 m-0 border-0 border-bottom">
+              <div class="row g-0">
+                <!-- 
+                Applied ratio on it but image got too large
+              -->
+                <div class="col-md-5 col-lg-6">
+                  <img src="images/posts/image-3.jpg"
+                    class="img-fluid object-fit-cover h-100" alt="post-img">
+                </div>
+                <div class="col-md-7 col-lg-6 py-0 my-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Amazon's Kindle Scribe is $60 off
+                      right now</h5>
+                    <p class="card-text lh-sm text-secondary d-none d-lg-block">There's
+                      also deals on its Kindle Paperwhite Kids and Kindle Kids</p>
+                    <div class="d-flex align-items-center" id="author">
+                      <img src="images/carousel/image-1.jpg"
+                        class="rounded-circle me-2" width="25px" height="25px"
+                        alt="author">
+                      <p class="card-text"><small class="text-body-secondary">By
+                          A. Tarantola, 17 hours ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card py-4 pe-0 m-0 border-0 border-bottom">
+              <div class="row g-0">
+                <!-- 
+                  Applied ratio on it but image got too large
+                -->
+                <div class="col-md-5 col-lg-6">
+                  <img src="images/posts/image-4.jpg"
+                    class="img-fluid object-fit-cover h-100" alt="post-img">
+                </div>
+                <div class="col-md-7 col-lg-6 py-0 my-0">
+                  <div class="card-body">
+                    <h5 class="card-title">'Apple Watch X' will reportedly
+                      feature a thinner casing and magnetic bands</h5>
+                    <p class="card-text lh-sm text-secondary d-none d-lg-block">It's
+                      still at least a year away.</p>
+                    <div class="d-flex align-items-center" id="author">
+                      <img src="images/carousel/image-1.jpg"
+                        class="rounded-circle me-2" width="25px" height="25px"
+                        alt="author">
+                      <p class="card-text"><small class="text-body-secondary">By
+                          A. Tarantola, 17 hours ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card py-4 pe-0 m-0 border-0 border-bottom">
+              <div class="row g-0">
+                <!-- 
+                  Applied ratio on it but image got too large
+                -->
+                <div class="col-md-5 col-lg-6">
+                  <img src="images/posts/image-5.jpg"
+                    class="img-fluid object-fit-cover h-100" alt="post-img">
+                </div>
+                <div class="col-md-7 col-lg-6 py-0 my-0">
+                  <div class="card-body">
+                    <h5 class="card-title">iRobot’s poop-detecting Roomba j7+ is
+                      at an all-time low price right now</h5>
+                    <p class="card-text lh-sm text-secondary d-none d-lg-block">You
+                      can also order the j7+ Combo mop and vacuum for $799.</p>
+                    <div class="d-flex align-items-center" id="author">
+                      <img src="images/carousel/image-1.jpg"
+                        class="rounded-circle me-2" width="25px" height="25px"
+                        alt="author">
+                      <p class="card-text"><small class="text-body-secondary">By
+                          A. Tarantola, 17 hours ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <aside class="col-lg-3 p-3"> aside</aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark">
+      <!-- CONTAINER -->
+      <div class="container ">
+
+        <!-- Links -->
+        <div class="row d-none d-lg-flex py-5">
+          <!-- Links section 1 -->
+          <div id="links" class="col-3 border-end border-secondary ">
+            <p class="mb-2 fw-bold text-uppercase position-relative py-3 text-light">About</p>
+            <ul class="list-unstyled fw-light">
+              <li>
+                <a class="text-secondary text-decoration-none"
+                  href="#">Engadget Masthead</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">About our Ads</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Advertise</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Licensing</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">FAQ</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">RSS Feed</a>
+              </li>
+            </ul>
+          </div>
+
+          
+          <!-- Links section 2 -->
+          <div id="links" class="col-3 border-end border-secondary">
+            <p class="mb-2 fw-bold text-uppercase position-relative py-3 text-light">Sections</p>
+            <ul class="list-unstyled fw-light">
+              <li>
+                <a class="text-secondary text-decoration-none"
+                  href="#">Reviews</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Gear</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Gaming</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Entertainment</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Tomorrow</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">The Buyers Guide</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Video</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Podcasts</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Deals</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Links section 3 -->
+          <div id="links" class="col-3 border-end border-secondary">
+            <p class="mb-2 fw-bold text-uppercase position-relative py-3 text-light">Contribute</p>
+            <ul class="list-unstyled fw-light">
+              <li>
+                <a class="text-secondary text-decoration-none"
+                  href="#">Comment Guidelines</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Links section 4 -->
+          <div id="links" class="col-3 ">
+            <p class="mb-2 fw-bold text-uppercase position-relative py-3 text-light">Buying Guides</p>
+            <ul class="list-unstyled fw-light">
+              <li>
+                <a class="text-secondary text-decoration-none"
+                  href="#">Best Android Phones</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Best Laptops for College Students</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Best Air Fryers</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Best VR Headsets</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Best Smartwatches</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Best Live TV Streaming Services</a>
+              </li>
+              <li>
+                <a class="text-secondary link-light text-decoration-none"
+                  href="#">Best Wireless Headphones</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- SEPARATOR LINE -->
+        <hr />
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="d-flex py-3" id="socials">
+          <span class="text-light col-3">
+            Follow Us
+          </span>
+
+          <div class="col-9 ">
+            <ul
+              class="list-unstyled d-flex justify-content-evenly justify-content-lg-start">
+              <li class="me-3">
+                <a href="#">
+                  <img
+                    src="images/icon-facebook.svg" alt="icon-facebook">
+                  </a>
+              </li>
+              <li class="me-3">
+                <a href="#">
+                  <img
+                    src="images/icon-twitter.svg" alt="icon-instagram">
+                  </a>
+              </li>
+              <li class="me-3">
+                <a href="#">
+                  <img
+                    src="images/icon-youtube.svg" alt="icon-twitter">
+                  </a>
+              </li>
+              <li class="me-3">
+                <a href="#"><img
+                    src="images/icon-instagram.svg" alt="icon-twitter">
+                  </a>
+              </li>
+              <li><a href="#">
+                <img
+                    src="images/icon-linkedin.svg" alt="icon-twitter">
+                  </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </footer>
+      <!-- Bootstrap JS -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    </body>
+  </html>
