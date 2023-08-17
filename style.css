@@ -1,7 +1,6 @@
 /* Default Font */
 body {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 18px;
 }
 
 
@@ -58,16 +57,22 @@ body {
     fill: lightgray;
 }
 
+
 #navbar {
     background-color: #2B2D32;
     border-bottom: 1px solid rgba(211, 211, 211, 0.3);
+    font-size: 18px;
+}
+
+#navbar .navbar-nav {
+    margin-right: 20px;
 }
 
 /* CAROUSEL SECTION */
 
 @media (max-width: 992px) {
     #carousel {
-        padding: 0;
+        /* padding: 0; */
     }
 }
 
@@ -180,6 +185,10 @@ body {
 
 #footer {
     background-color: #212529;
+}
+
+#links p {
+    font-size: 18px;
 }
 
 /* Purple line of top of Section names */
