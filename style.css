@@ -4,10 +4,6 @@ body {
     font-size: 18px;
 }
 
-/* h1,h2,h3,h4,h5,h6 {
-    font-family: 'Merriweather', serif;
-} */
-
 
 /* HEADER SECTION */
 
@@ -15,10 +11,13 @@ body {
     background-color: #212529;
 }
 
-#search{
-    border-left: 1px solid rgba(211, 211, 211, 0.3);
-}
+
 @media (max-width: 992px) {
+
+    #search {
+        border-left: 1px solid rgba(211, 211, 211, 0.3);
+    }
+
     #header .container-fluid {
         padding-right: 0;
         margin-right: 0;
@@ -55,16 +54,17 @@ body {
 
 
 /* NAVBAR SECTION */
-
 #socials-nav svg path:hover {
     fill: lightgray;
 }
 
 #navbar {
-    border-color: lightgray;
+    background-color: #2B2D32;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.3);
 }
 
 /* CAROUSEL SECTION */
+
 @media (max-width: 992px) {
     #carousel {
         padding: 0;
@@ -109,24 +109,26 @@ body {
     height: 197px;
 }
 
-  
+
 @media (max-width: 1200px) {
     #post-img {
         width: 200px;
         height: 131px;
     }
 }
- 
+
 @media (max-width: 768px) {
     #post-img {
         width: 100%;
         height: auto;
     }
 }
- 
 
 
-
+#latest .card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 #latest .card-title {
     font-family: 'Merriweather', serif;
@@ -141,17 +143,6 @@ body {
     }
 }
 
-
-#author .card-text small {
-    font-size: 14px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
-
-}
-
-
-
-
 #latest .card-text {
     font-family: 'Merriweather', serif;
     font-weight: 300;
@@ -160,10 +151,17 @@ body {
 }
 
 
-#latest .card-body {
-    padding-top: 0;
-    padding-bottom: 0;
+
+
+/* Author name */
+#author .card-text small {
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+
 }
+
+
 
 @media (max-width: 768px) {
     #latest .card-body {
@@ -180,6 +178,11 @@ body {
 
 /* FOOTER SECTION */
 
+#footer {
+    background-color: #212529;
+}
+
+/* Purple line of top of Section names */
 #links p::before {
     content: "";
     position: absolute;
