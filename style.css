@@ -72,7 +72,7 @@ body {
 
 @media (max-width: 992px) {
     #carousel {
-        /* padding: 0; */
+        padding: 0;
     }
 }
 
