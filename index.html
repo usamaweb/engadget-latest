@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto+Condensed:wght@300;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto+Condensed:wght@300;400;700&display=swap"
       rel="stylesheet">
 
     <!-- Bootstrap CSS -->
@@ -20,7 +20,7 @@
       crossorigin="anonymous">
 
     <!-- Breakpoints CSS -->
-    <!-- <link rel="stylesheet" href="breakpoints.css"> -->
+    <link rel="stylesheet" href="breakpoints.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -36,7 +36,7 @@
     -->
 
     <header id="header">
-      <div class="container d-flex justify-content-between align-items-center">
+      <div class="container-fluid container-lg d-flex justify-content-between align-items-center">
 
         <div class="d-flex">
           <button class="navbar-toggler btn d-flex d-lg-none align-items-center"
@@ -46,7 +46,7 @@
             aria-label="Toggle navigation">
 
             <!-- Hamburger Icon -->
-            <svg width="55" height="33" viewBox="0 0 12 12" id="Слой_1"
+            <svg width="55" height="33" viewBox="0 0 12 12"
               version="1.1" xml:space="preserve"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -75,9 +75,9 @@
           </a>
         </div>
 
-        <div class="p-4 border-start ">
+        <div class="p-4 p-lg-0" id="search">
           <!-- Log In text -->
-          <a class="d-none d-lg-block text-secondary text-decoration-none"
+          <a class="d-none p-0 m-0 d-lg-block text-secondary text-decoration-none"
             href="#">Login</a>
 
           <!-- Search Icon -->
@@ -267,12 +267,12 @@
     </nav>
 
     <!-- EXTRA SPACE AFTER NAV  -->
-    <div class="bg-dark p-4"></div>
+    <div class="p-2"></div>
 
     <main>
 
       <!-- CAROUSEL SECTION -->
-      <section class="container" id="carousel">
+      <section class="container-md container-fluid" id="carousel">
         <!-- Carousel -->
         <div id="carouselExampleIndicators" class="carousel slide">
           <!-- Carousel Indicators -->
@@ -331,36 +331,36 @@
 
       <!-- LATEST SECTION -->
 
-      <section class="container my-5 " id="latest">
+      <section class="container-md container-fluid my-5 " id="latest">
 
         <!-- Section Heading -->
         <h1
-          class="fs-3 fw-bold position-relative py-4 border-bottom mx-3 ms-sm-0">The
+          class="fw-bold position-relative py-4 border-bottom mx-3 mx-md-0">The
           Latest</h1>
 
         <!-- Content Container  -->
-        <div class="container row g-0">
+        <div class="container mw-100 row g-0">
 
           <!-- Cards Container -->
-          <div class="col-lg-9" id="cards">
+          <div class="col " id="cards">
             <!-- Card 1 -->
             <div class="card py-4 pe-0 m-0 border-0 border-bottom">
               <div class="row g-0">
                 <!-- 
                 Applied ratio on it but image got too large
               -->
-                <div class="col-md-5 col-lg-6">
+                <div class="col-md-auto">
                   <img src="images/posts/image-1.jpg"
-                    class="img-fluid object-fit-cover h-100" alt="post-img">
+                    class="object-fit-cover" id="post-img" alt="post-img">
                 </div>
-                <div class="col-md-7 col-lg-6 py-0 my-0">
+                <div class="col-md py-0 my-0">
                   <div class="card-body">
                     <h5 class="card-title">Hitting the Books: The thirty-year
                       quest to make WiFi a connectivity reality</h5>
-                    <p class="card-text lh-sm text-secondary d-none d-lg-block">Establishing
+                    <p class="card-text lh-sm text-secondary d-none d-md-block">Establishing
                       the wireless protocol took a lot more effort than just
                       unplugging it and waiting a few seconds.</p>
-                    <div class="d-flex align-items-center" id="author">
+                    <div class="d-flex align-items-center " id="author">
                       <img src="images/carousel/image-1.jpg"
                         class="rounded-circle me-2" width="25px" height="25px"
                         alt="author">
@@ -378,9 +378,9 @@
                 <!-- 
                   Applied ratio on it but image got too large
                 -->
-                <div class="col-md-5 col-lg-6">
+                <div class="col-md-auto">
                   <img src="images/posts/image-2.jpg"
-                    class="img-fluid object-fit-cover h-100" alt="post-img">
+                    class="img-fluid object-fit-cover" id="post-img" alt="post-img">
                 </div>
                 <div class="col-md-7 col-lg-6 py-0 my-0">
                   <div class="card-body">
@@ -406,9 +406,9 @@
                 <!-- 
                 Applied ratio on it but image got too large
               -->
-                <div class="col-md-5 col-lg-6">
+                <div class="col-md-auto">
                   <img src="images/posts/image-3.jpg"
-                    class="img-fluid object-fit-cover h-100" alt="post-img">
+                    class="img-fluid object-fit-cover" id="post-img" alt="post-img">
                 </div>
                 <div class="col-md-7 col-lg-6 py-0 my-0">
                   <div class="card-body">
@@ -434,9 +434,9 @@
                 <!-- 
                   Applied ratio on it but image got too large
                 -->
-                <div class="col-md-5 col-lg-6">
+                <div class="col-md-auto" id="post">
                   <img src="images/posts/image-4.jpg"
-                    class="img-fluid object-fit-cover h-100" alt="post-img">
+                    class="img-fluid object-fit-cover" id="post-img" alt="post-img">
                 </div>
                 <div class="col-md-7 col-lg-6 py-0 my-0">
                   <div class="card-body">
@@ -462,13 +462,13 @@
                 <!-- 
                   Applied ratio on it but image got too large
                 -->
-                <div class="col-md-5 col-lg-6">
+                <div class="col-md-auto">
                   <img src="images/posts/image-5.jpg"
-                    class="img-fluid object-fit-cover h-100" alt="post-img">
+                    class="img-fluid object-fit-cover" id="post-img" alt="post-img">
                 </div>
                 <div class="col-md-7 col-lg-6 py-0 my-0">
                   <div class="card-body">
-                    <h5 class="card-title">iRobot’s poop-detecting Roomba j7+ is
+                    <h5 class="card-title">iRobot’s Roomba j7+ is
                       at an all-time low price right now</h5>
                     <p class="card-text lh-sm text-secondary d-none d-lg-block">You
                       can also order the j7+ Combo mop and vacuum for $799.</p>
@@ -493,7 +493,7 @@
 
     <footer class="bg-dark">
       <!-- CONTAINER -->
-      <div class="container ">
+      <div class="container-md container-fluid">
 
         <!-- Links -->
         <div class="row d-none d-lg-flex py-5">
@@ -629,7 +629,7 @@
 
         <!-- SOCIAL LINKS -->
 
-        <div class="d-flex py-3 border-top border-secondary" id="socials">
+        <div class="d-flex py-3 " id="socials">
           <span class="text-light col-3">
             Follow Us
           </span>

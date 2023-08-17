@@ -15,8 +15,11 @@ body {
     background-color: #212529;
 }
 
-@media (max-width: 576px) {
-    #header .container {
+#search{
+    border-left: 1px solid rgba(211, 211, 211, 0.3);
+}
+@media (max-width: 992px) {
+    #header .container-fluid {
         padding-right: 0;
         margin-right: 0;
     }
@@ -62,7 +65,7 @@ body {
 }
 
 /* CAROUSEL SECTION */
-@media (max-width: 576px) {
+@media (max-width: 992px) {
     #carousel {
         padding: 0;
     }
@@ -70,10 +73,14 @@ body {
 
 
 /* LATEST SECTION */
-@media (max-width: 992px) {
-    #latest {
-        padding-left: 0;
-        padding-right: 0;
+
+#latest h1 {
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    #latest h1 {
+        font-size: 24px;
     }
 }
 
@@ -88,24 +95,87 @@ body {
 
 }
 
+
+
+@media (max-width: 992px) {
+    #latest {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+#post-img {
+    width: 300px;
+    height: 197px;
+}
+
+  
+@media (max-width: 1200px) {
+    #post-img {
+        width: 200px;
+        height: 131px;
+    }
+}
+ 
+@media (max-width: 768px) {
+    #post-img {
+        width: 100%;
+        height: auto;
+    }
+}
+ 
+
+
+
+
 #latest .card-title {
     font-family: 'Merriweather', serif;
     font-weight: 400;
+    font-size: 30px;
 }
+
+@media (max-width: 1200px) {
+    #latest .card-title {
+        font-size: 22px;
+
+    }
+}
+
+
+#author .card-text small {
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+
+}
+
+
+
 
 #latest .card-text {
     font-family: 'Merriweather', serif;
     font-weight: 300;
 
-    font-size: 16px;
+    font-size: 15px;
 }
 
 
-/* Tried to change font family but it didnt, Specificity issue maybe */
-#author p{
-    font-family: 'Roboto Condensed', sans-serif;
-
+#latest .card-body {
+    padding-top: 0;
+    padding-bottom: 0;
 }
+
+@media (max-width: 768px) {
+    #latest .card-body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+
 
 
 /* FOOTER SECTION */
