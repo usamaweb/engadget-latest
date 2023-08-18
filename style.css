@@ -68,6 +68,12 @@ body {
     margin-right: 20px;
 }
 
+
+#socials-nav a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
 /* CAROUSEL SECTION */
 
 @media (max-width: 992px) {
@@ -95,7 +101,7 @@ body {
     top: 0;
     left: 0;
     width: 25px;
-    background-color: purple;
+    background-color: #9a58b5;
     height: 4px;
 
 }
@@ -108,6 +114,23 @@ body {
         padding-right: 0;
     }
 }
+
+
+.card {
+    padding: 40px 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #dedede;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 5px 0 ;
+        border: none;
+    }
+}
+
+
 
 #post-img {
     width: 300px;
@@ -141,6 +164,14 @@ body {
     font-size: 30px;
 }
 
+@media (max-width: 768px) {
+    #latest .card-title {
+        font-weight: 500;
+
+    }
+}
+
+
 @media (max-width: 1200px) {
     #latest .card-title {
         font-size: 22px;
@@ -151,8 +182,7 @@ body {
 #latest .card-text {
     font-family: 'Merriweather', serif;
     font-weight: 300;
-
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
@@ -191,6 +221,23 @@ body {
     font-size: 18px;
 }
 
+#links a {
+    color: #959698;
+    text-decoration: none;
+}
+
+#links a:hover{
+    color: #FFF;
+}
+
+/* Gap between social icon on large screens */
+@media (min-width: 992px) {
+    #socials li {
+        margin-left: 20px;
+    }
+}
+
+
 /* Purple line of top of Section names */
 #links p::before {
     content: "";
@@ -199,5 +246,5 @@ body {
     left: 0;
     width: 30px;
     height: 3px;
-    background-color: purple;
+    background-color: #9a58b5;
 }
